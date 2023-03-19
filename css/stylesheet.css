@@ -2,9 +2,15 @@ body {
     color: #256993;
     font-family: Montserrat, sans-serif;
     display: flex;
-    padding: 0%;
-    margin: 0%;
+    margin: 0;
+    min-height: 100vh;
 }
+
+div {
+    align-items: center;
+    margin: 0px 0px;
+}
+
 
 h1 {
     text-align: center;
@@ -21,18 +27,26 @@ header {
     grid-column-end: 3;
 }
 
+button {
+    background-color: #375f68;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    padding: 2vh 1vw;
+    margin: 1vh 2vw 1vh 2vw;
+}
+
 .sidebar {
     background-color: #FAF4EC;
-    height: 100vw;
+    height: 100vh;
     width: 20vw;
 }
 
 .mainbody {
     display: grid;
     background-color: #F3E9DE;
-    height: 100vw;
+    height: 100vh;
     width: 80vw;
-    grid-row-;
 }
 
 .aboutdocs {
@@ -44,9 +58,40 @@ header {
     column-gap: 1vw;
 }
 
+.buttons1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: inline-flex;
+}
+
+.buttons2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.textbox {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+}
+
+textarea {
+    width: 95%;
+    border: 5px solid #759feb;
+    border-radius: 5px;
+}
+
+.buttons3 {
+    background-color: #9B332C;
+    color: white;
+}
+
 .footer {
     display: flex;
-    margin-top: 0;
+    margin-top: 0vh;
     justify-content: center;
     justify-items: center;
     grid-column-start: 1;

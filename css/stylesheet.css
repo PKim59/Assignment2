@@ -11,14 +11,20 @@ body {
 }
 
 .mainbody {
+    background-color: #F3E9DE;
     height: 100vw;
     width: 80vw;
 }
 
 .footer {
     display: grid;
-    grid-auto-columns: 2;
-    grid-template-rows: 2;
+    /* grid-template-columns: 2;
+    grid-template-rows: 2; */
     justify-content: center;
-    gap: 10px;
+    justify-items: center;
+}
+
+.footer > h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }

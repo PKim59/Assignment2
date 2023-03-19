@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+}
+
+.sidebar {
+    background-color: #FAF4EC;
+    height: 100vw;
+    width: 20vw;
+}
+
+.mainbody {
+    height: 100vw;
+    width: 80vw;
+}
+
+.footer {
+    display: grid;
+    grid-auto-columns: 2;
+    grid-template-rows: 2;
+    justify-content: center;
+    gap: 10px;
+}

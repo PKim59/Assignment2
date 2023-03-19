@@ -1,7 +1,24 @@
 body {
+    color: #256993;
+    font-family: Montserrat, sans-serif;
     display: flex;
     padding: 0%;
     margin: 0%;
+}
+
+h1 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+li {
+    list-style-type: square;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .sidebar {
@@ -11,20 +28,28 @@ body {
 }
 
 .mainbody {
+    display: grid;
     background-color: #F3E9DE;
     height: 100vw;
     width: 80vw;
+    grid-row-;
+}
+
+.aboutdocs {
+    display: flex;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: flex-end;
+    column-gap: 1vw;
 }
 
 .footer {
-    display: grid;
-    /* grid-template-columns: 2;
-    grid-template-rows: 2; */
+    display: flex;
+    margin-top: 0;
     justify-content: center;
     justify-items: center;
-}
-
-.footer > h1 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
+

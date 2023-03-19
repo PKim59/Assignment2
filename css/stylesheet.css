@@ -6,11 +6,11 @@ body {
     min-height: 100vh;
 }
 
-div {
-    align-items: center;
-    margin: 0px 0px;
+.sidebar {
+    background-color: #FAF4EC;
+    height: 100vh;
+    width: 20vw;
 }
-
 
 h1 {
     text-align: center;
@@ -22,31 +22,30 @@ li {
     list-style-type: square;
 }
 
+.mainbody {
+    display: grid;
+    background-color: #F3E9DE;
+    height: 100vh;
+    width: 80vw;
+}
+
 header {
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+div {
+    align-items: center;
+    margin: 0px 0px;
 }
 
 button {
     background-color: #375f68;
     color: white;
     border-radius: 5px;
-    width: 100px;
+    min-width: 100px;
     padding: 2vh 1vw;
     margin: 1vh 2vw 1vh 2vw;
-}
-
-.sidebar {
-    background-color: #FAF4EC;
-    height: 100vh;
-    width: 20vw;
-}
-
-.mainbody {
-    display: grid;
-    background-color: #F3E9DE;
-    height: 100vh;
-    width: 80vw;
 }
 
 .aboutdocs {
@@ -71,17 +70,17 @@ button {
     justify-content: flex-end;
 }
 
+textarea {
+    width: 95%;
+    border: 5px solid #759feb;
+    border-radius: 5px;
+}
+
 .textbox {
     display: flex;
     grid-column-start: 1;
     grid-column-end: 3;
     justify-content: center;
-}
-
-textarea {
-    width: 95%;
-    border: 5px solid #759feb;
-    border-radius: 5px;
 }
 
 .buttons3 {
@@ -98,3 +97,13 @@ textarea {
     grid-column-end: 3;
 }
 
+@media screen and (min-width: 600px) {
+    body {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 20vw;
+    }
+    
+}

@@ -4,6 +4,7 @@
     display: grid;
     grid-template-rows: 1fr 4fr;
     margin: 0%;
+    height: 100vh;
 }
 
 .sidebar {
@@ -15,7 +16,7 @@
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 3;

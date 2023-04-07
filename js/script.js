@@ -32,6 +32,7 @@ function buttontextswap() {
       } else {
         if (textarea.value) {
           textarea.value = "";
+          newnotebutton.innertext = "New Note"
         } else {
           textarea.style.display = "none";
           saveandcancel.style.display = "none";
@@ -70,3 +71,26 @@ function savetolist() {
 
 savebutton.addEventListener("click", savetolist);
 
+notesarray.forEach(function(note) {
+    const newsave = document.createElement("li");
+    newsave.textContent = note.title;
+    sidebarlist.appendChild(newsave);
+});
+
+
+function loadnote(event) {
+    const clickedli = event.target.closest('li');
+    
+    if (clickedli) {
+      const notetitle = clickedli.textContent;
+    
+      const note = notesarray.find(note => note.title === notetitle);
+    
+      if (note) {
+        const textarea = document.querySelector(".textbox textarea");
+        textarea.value = note.body;
+      }
+    }
+  }
+  
+  sidebarlist.addEventListener("click", loadnote);

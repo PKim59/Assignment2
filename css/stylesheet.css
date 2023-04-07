@@ -107,6 +107,16 @@ textarea {
     grid-column-end: 3;
 }
 
+.darktheme {
+    background-color: #050B13;
+    color: white;
+}
+
+.darktheme2 {
+    background-color: #5A5A5A;
+    color: white;
+}
+
 @media screen and (min-width: 600px) {
     .body {
         display: flex;

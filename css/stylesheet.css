@@ -98,6 +98,10 @@ textarea {
     background-color: #9B332C;
 }
 
+.hide {
+    display: none;
+}
+
 .footer {
     display: flex;
     margin-top: 0vh;

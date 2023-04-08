@@ -90,3 +90,5 @@ function loadnote(event) {
   }
   
   sidebarlist.addEventListener("click", loadnote);
+
+  // comment so that I can re-pull request after fixes.
